@@ -24,4 +24,6 @@
   4. подготовка под папок для модулей (controlles, entities, repositories, servises, utils)
   5. в папке utils создаем папки (enums, interfaces, dtos)
 
-  10) подключение 
+  10) Подключение typeorm 
+     1. Поднимаем базу данных
+     2. Потключаем typeorm

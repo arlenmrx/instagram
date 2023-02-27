@@ -4,7 +4,8 @@ import { AuthModule } from './auth/auth.module';
 import { MessageModule } from './message/message.module';
 import { PostModule } from './post/post.module';
 import { UserModule } from './user/user.module';
-
+import { UserProfile } from './user/entity/user-profile.entity';
+import { User } from './auth/entity/user.entity';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { UserModule } from './user/user.module';
       username: 'postgres',
       password: 'keiz',
       database: 'instagram',
-      entities: [],
+      entities: [UserProfile, User],
       synchronize: true,
     }),
     AuthModule,
