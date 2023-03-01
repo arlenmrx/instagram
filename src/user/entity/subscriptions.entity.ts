@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, ManyToMany, JoinTable } from "typeorm";
 import { UserProfile } from "./user-profile.entity";
 
 @Entity('subscriptions')
@@ -14,5 +14,5 @@ export class Subscriptions {
     @JoinTable({ name: 'to_subs_id'})
     subscribe: UserProfile;
 
-
+    
 }
